@@ -1,0 +1,15 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Default.uss?fileID=7433441132597879392&amp;guid=d7d679a7422094741aee72ee61157902&amp;type=3#Default"/>
+    <ui:VisualElement name="Main" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; align-self: center; align-content: center; justify-content: center; align-items: center;">
+        <ui:VisualElement name="Buttons" style="flex-grow: 0; width: 20%; height: 40%; aspect-ratio: auto; padding-top: 6px; padding-right: 6px; padding-bottom: 6px; padding-left: 6px; justify-content: center; align-content: center; align-items: stretch; rotate: 0; scale: 1 1;">
+            <ui:VisualElement name="Host" style="flex-grow: 0; height: 30%; align-content: center; align-self: auto; justify-content: center; align-items: stretch; rotate: 0;">
+                <ui:Button text="Host" class="menuButton"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Join" style="flex-grow: 0; height: 44%; align-content: center; align-self: auto; justify-content: flex-start; align-items: stretch;">
+                <ui:Button text="Join" class="menuButton" style="background-color: rgba(69, 117, 132, 0.855);"/>
+                <ui:TextField label="" placeholder-text="filler text" style="width: 96%; align-self: center; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); -unity-font-style: bold; -unity-text-align: middle-left;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label text="Survival Game (wt)" name="Title" style="-unity-font-style: bold; font-size: 42px; -unity-text-align: middle-center; color: rgb(255, 255, 255); position: absolute; top: 4%;"/>
+    </ui:VisualElement>
+</ui:UXML>

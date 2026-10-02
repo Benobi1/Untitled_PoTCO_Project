@@ -1,0 +1,28 @@
+VisualElement {
+}
+
+.menuButton:hover {
+    rotate: 2deg;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    scale: 1.02 1.02 1.02;
+}
+
+.menuButton {
+    -unity-font-style: bold;
+    font-size: 28px;
+    -unity-text-auto-size: none;
+    background-color: rgba(160, 111, 93, 0.855);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: rgb(255, 255, 255);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    visibility: visible;
+    display: flex;
+    overflow: visible;
+    rotate: 0;
+}
