@@ -14,11 +14,11 @@ public class NetworkPlayerController : NetworkBehaviour
   [SerializeField] private GameObject playerCameraObject;
   
   private CharacterController controller;
-  private Vector3 velocity;
   
   public override void OnNetworkSpawn() {
+    controller = GetComponent<CharacterController>();
+    
     if (!IsOwner) {
-      //Destroy(GetComponentInChildren<Camera>());
       enabled = false;
 
       if (playerCameraObject != null) {
@@ -30,12 +30,10 @@ public class NetworkPlayerController : NetworkBehaviour
     if (playerCameraObject != null) {
       playerCameraObject.SetActive(true);
     }
-    
-    controller = GetComponent<CharacterController>();
   }
   
   void Update() {
-    if (!IsOwner) return;
+    if (!IsOwner || controller == null) return;
     if (Keyboard.current == null) return;
 
     float moveX = 0f;
