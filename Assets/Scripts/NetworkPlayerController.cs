@@ -16,6 +16,7 @@ public class NetworkPlayerController : NetworkBehaviour
   private CharacterController controller;
   
   public override void OnNetworkSpawn() {
+    Debug.Log(gameObject.name + " spawed. IsOwner: " +  IsOwner);
     controller = GetComponent<CharacterController>();
     
     if (!IsOwner) {
